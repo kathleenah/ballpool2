@@ -45,6 +45,7 @@ public class PlayerMovement : MonoBehaviour{
         if(other.CompareTag("Water")){
             inWater=true;
             jumpsRemaining=maxJumps;
+            FindAnyObjectByType<AudioManager>().PlaySplash();
         }
     }
 

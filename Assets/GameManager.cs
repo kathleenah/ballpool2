@@ -45,6 +45,7 @@ public class GameManager : MonoBehaviour{
         }
         highScoreText.text = "High score: " + highScore;
         winPanel.SetActive(true);
+        FindAnyObjectByType<AudioManager>().PlayWin();
         Time.timeScale=0f;
 
         
