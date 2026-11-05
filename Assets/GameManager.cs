@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour{
         winPanel.SetActive(false);
     }
 
-    void Start2(){
+    public void Start2(){
         Time.timeScale = 1f;
         SceneManager.LoadScene("Game2Scene");
     }
