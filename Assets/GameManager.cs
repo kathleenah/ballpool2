@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour{
     public int totalBalls = 5;
@@ -24,6 +25,11 @@ public class GameManager : MonoBehaviour{
     void Start(){
         highScore = PlayerPrefs.GetInt("HighScore", 0);
         winPanel.SetActive(false);
+    }
+
+    void Start2(){
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Game2Scene");
     }
 
     public void BallExitedPool(){
